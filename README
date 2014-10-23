@@ -1,0 +1,48 @@
+CS3753 (Operating Systems)
+Spring 2014
+University of Colorado Boulder
+Programming Assignment 3
+Public Code
+
+By Andy Sayler - 2012
+http://www.andysayler.com
+
+With help from:
+Junho Ahn - 2012
+
+Updated by Mike Gartrell - 2014
+
+Updated by Chris Costello - 2014
+
+---Folders---
+handout - Assignment description and documentation
+results - output from the runscript
+outputFiles - where the output files from rw and mixed go.
+Write-up - the write up
+
+---Executables---
+./pi-sched - A simple program for statistically calculating pi using
+             a specific scheduling policy
+./rw - A simple i/o bound example program.
+./mixed - A program that combines pi-sched and rw
+
+---Examples---
+Build:
+ make
+
+Clean:
+ make clean
+
+pi-sched:
+ ./pi-sched <#Processes> <Scheduler>
+
+rw:
+ ./rw <#Processors> <Scheduler>
+ ./rw <#Processors> <Scheduler> <#Bytes to Write to Output File> <Block Size> <Input Filename> <Output Filename>
+
+mixed:
+ ./mixed <#Processors> <Scheduler>
+
+runscript:
+ ./runscript.sh
+
